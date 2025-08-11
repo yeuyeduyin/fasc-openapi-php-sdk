@@ -13,6 +13,7 @@ use FddCloud\bean\req\seal\CreateSealByTemplateReq;
 use FddCloud\bean\req\seal\GetAppointedSealUrlReq;
 use FddCloud\bean\req\seal\GetAppointedUserSealListReq;
 use FddCloud\bean\req\seal\GetCertInfoReq;
+use FddCloud\bean\req\seal\GetFreeSignInfoListReq;
 use FddCloud\bean\req\seal\GetFreeSignToTemplateListReq;
 use FddCloud\bean\req\seal\GetFreeSignToTemplateUrlReq;
 use FddCloud\bean\req\seal\GetPersonalSealCreateUrlReq;
@@ -89,8 +90,17 @@ class SealClient
     {
         return $this->client->request($accessToken, json_encode($req), OpenApiUrlConstants::SEAL_CREATE_GET_URL);
     }
-
     # 查询印章列表
+    function getSealInfoList($accessToken, GetSealListReq $req)
+    {
+        return $this->client->request($accessToken, json_encode($req), OpenApiUrlConstants::SEAL_GET_INFO_LIST);
+    }
+    # 查询免验证签开通信息列表
+    function getFreeSignInfoList($accessToken, GetFreeSignInfoListReq $req)
+    {
+        return $this->client->request($accessToken, json_encode($req), OpenApiUrlConstants::SEAL_GET_FREE_SIGN_INFO_LIST);
+    }
+    # 查询印章列表（不推荐）
     function getSealList($accessToken, GetSealListReq $req)
     {
         return $this->client->request($accessToken, json_encode($req), OpenApiUrlConstants::SEAL_GET_LIST);

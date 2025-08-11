@@ -113,6 +113,8 @@ class OpenApiUrlConstants
     const SEAL_MANAGE_GET_URL = '/seal/manage/get-url';
     const SEAL_FREE_SIGN_GET_URL = '/seal/free-sign/get-url';
     const SEAL_CREATE_GET_URL = '/seal/create/get-url';
+    const SEAL_GET_INFO_LIST = '/seal/get-seal-info-list';
+    const SEAL_GET_FREE_SIGN_INFO_LIST = '/seal/get-free-sign-info-list';
     const SEAL_GET_LIST = '/seal/get-list';
     const SEAL_GET_DETAIL = '/seal/get-detail';
     const SEAL_MANAGE_GET_APPOINTED_SEAL_URL = '/seal/manage/get-appointed-seal-url';
