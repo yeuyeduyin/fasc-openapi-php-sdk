@@ -154,6 +154,7 @@ class OpenApiUrlConstants
     const FILE_GET_KEYWORD_POSITIONS = '/file/get-keyword-positions';
     const FILE_VERIFY_SIGN = '/file/verify-sign';
     const FILE_GET_PAGE_INFO = '/file/get-page-info';
+    const FILE_GET_SEAL_POSITION_URL='/file/get-seal-position-url';
 
     /**
      * ArchivesPerformanceClient
@@ -224,6 +225,7 @@ class OpenApiUrlConstants
     # 签署模板
     const SIGN_TEMPLATE_GET_LIST = '/sign-template/get-list';
     const SIGN_TEMPLATE_GET_DETAIL = '/sign-template/get-detail';
+    const TEMPLATE_DOWNLOAD_URL = '/template/get-download-url';
     const TEMPLATE_MANAGE_GET_URL = '/template/manage/get-url';
     const TEMPLATE_CREATE_GET_URL = '/template/create/get-url';
     const TEMPLATE_PREVIEW_GET_URL = '/template/preview/get-url';

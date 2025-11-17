@@ -4,9 +4,26 @@ namespace FddCloud\bean\req;
 
 class FieldCorpSeal
 {
+    public $followSignSize;
     public $width;
     public $height;
     public $categoryType;
+
+    /**
+     * @return mixed
+     */
+    public function getFollowSignSize()
+    {
+        return $this->followSignSize;
+    }
+
+    /**
+     * @param mixed $followSignSize
+     */
+    public function setFollowSignSize($followSignSize)
+    {
+        $this->followSignSize = $followSignSize;
+    }
 
     /**
      * @return mixed

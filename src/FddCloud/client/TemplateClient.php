@@ -12,6 +12,7 @@ use FddCloud\bean\req\template\docTemplate\DocTemplateDetailReq;
 use FddCloud\bean\req\template\docTemplate\FillValueDocTemplateReq;
 use FddCloud\bean\req\template\docTemplate\GetDocTemplateListReq;
 use FddCloud\bean\req\template\docTemplate\SetDocTemplateStatusReq;
+use FddCloud\bean\req\template\GetTemplateDownloadUrlReq;
 use FddCloud\bean\req\template\signTemplate\DeleteSignTemplateReq;
 use FddCloud\bean\req\template\signTemplate\GetSignTemplateListReq;
 use FddCloud\bean\req\template\signTemplate\SetSignTemplateStatusReq;
@@ -96,6 +97,11 @@ class TemplateClient
     function getSignTemplateDetail($accessToken, SignTemplateDetailReq $req)
     {
         return $this->client->request($accessToken, json_encode($req, JSON_FORCE_OBJECT), OpenApiUrlConstants::SIGN_TEMPLATE_GET_DETAIL);
+    }
+    # 获取模板原文件下载链接
+    function getTemplateDownloadUrl($accessToken, GetTemplateDownloadUrlReq $req)
+    {
+        return $this->client->request($accessToken, json_encode($req, JSON_FORCE_OBJECT), OpenApiUrlConstants::TEMPLATE_DOWNLOAD_URL);
     }
 
     # 获取模板新增链接
