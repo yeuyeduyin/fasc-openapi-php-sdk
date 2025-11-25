@@ -10,6 +10,7 @@ class DownloadFilesReq extends SignTaskBaseReq
     public $customName;
     public $compression;
     public $folderBySigntask;
+    public $downloadMode;
     public $batchDownloadInfo = array();
 
     /**
@@ -74,6 +75,22 @@ class DownloadFilesReq extends SignTaskBaseReq
     public function setFolderBySigntask($folderBySigntask)
     {
         $this->folderBySigntask = $folderBySigntask;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDownloadMode()
+    {
+        return $this->downloadMode;
+    }
+
+    /**
+     * @param mixed $downloadMode
+     */
+    public function setDownloadMode($downloadMode)
+    {
+        $this->downloadMode = $downloadMode;
     }
 
     public function getBatchDownloadInfo(): array

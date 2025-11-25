@@ -42,6 +42,8 @@ class Field
     public $fieldSelectBox;
 
     public $fieldTable;
+    public $fieldVerificationCode;
+    public $fieldBusinessCode;
 
     /**
      * @return mixed
@@ -361,6 +363,38 @@ class Field
     public function setFieldTable($fieldTable)
     {
         $this->fieldTable = $fieldTable;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFieldVerificationCode()
+    {
+        return $this->fieldVerificationCode;
+    }
+
+    /**
+     * @param mixed $fieldVerificationCode
+     */
+    public function setFieldVerificationCode($fieldVerificationCode)
+    {
+        $this->fieldVerificationCode = $fieldVerificationCode;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFieldBusinessCode()
+    {
+        return $this->fieldBusinessCode;
+    }
+
+    /**
+     * @param mixed $fieldBusinessCode
+     */
+    public function setFieldBusinessCode($fieldBusinessCode)
+    {
+        $this->fieldBusinessCode = $fieldBusinessCode;
     }
 
 }
