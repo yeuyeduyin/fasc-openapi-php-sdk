@@ -18,6 +18,7 @@ class Field
     public $fieldPersonSign;
 
     public $fieldCorpSeal;
+    public $fieldCorpSealCross;
 
     public $fieldDateSeal;
 
@@ -299,6 +300,22 @@ class Field
     public function setFieldCorpSeal($fieldCorpSeal)
     {
         $this->fieldCorpSeal = $fieldCorpSeal;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFieldCorpSealCross()
+    {
+        return $this->fieldCorpSealCross;
+    }
+
+    /**
+     * @param mixed $fieldCorpSealCross
+     */
+    public function setFieldCorpSealCross($fieldCorpSealCross)
+    {
+        $this->fieldCorpSealCross = $fieldCorpSealCross;
     }
 
     /**
