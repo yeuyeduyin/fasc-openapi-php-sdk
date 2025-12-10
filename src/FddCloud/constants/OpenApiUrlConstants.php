@@ -312,7 +312,9 @@ class OpenApiUrlConstants
 
     # 3)签署任务查询
     const SIGN_TASK_OWNER_GET_LIST = '/sign-task/owner/get-list';
+    # @deprecated 已过时，请使用 /sign-task/get-detail 代替
     const SIGN_TASK_APP_GET_DETAIL = '/sign-task/app/get-detail';
+    const SIGN_TASK_GET_DETAIL = '/sign-task/get-detail';
     const SIGN_TASK_ACTOR_GET_LIST = '/sign-task/actor/list';
     const SIGN_TASK_FIELD_GET_LIST = '/sign-task/field/list';
     const SIGN_TASK_APPROVAL_GET_INFO = '/sign-task/get-approval-info';

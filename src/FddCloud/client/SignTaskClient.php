@@ -27,6 +27,7 @@ use FddCloud\bean\req\signTask\GetBatchCreateDownloadUrlReq;
 use FddCloud\bean\req\signTask\GetBatchSignUrlReq;
 use FddCloud\bean\req\signTask\GetFacePictureReq;
 use FddCloud\bean\req\signTask\GetPicDownloadUrlReq;
+use FddCloud\bean\req\signTask\GetSignTaskDetailReq;
 use FddCloud\bean\req\signTask\GetSignTaskEditUrlReq;
 use FddCloud\bean\req\signTask\GetSignTaskSlicingDocReq;
 use FddCloud\bean\req\signTask\GetV3ActorSignTaskUrlReq;
@@ -210,10 +211,16 @@ class SignTaskClient
         return $this->client->request($accessToken, json_encode($req), OpenApiUrlConstants::SIGN_TASK_OWNER_GET_LIST);
     }
 
-    # 查询签署任务详情
+    # 查询签署任务详情(废弃) @deprecated 已过时，请使用 /sign-task/get-detail 代替。
     function getAppDetail($accessToken, SignTaskBaseReq $req)
     {
         return $this->client->request($accessToken, json_encode($req, JSON_FORCE_OBJECT), OpenApiUrlConstants::SIGN_TASK_APP_GET_DETAIL);
+    }
+
+    # 查询签署任务详情
+    function getDetail($accessToken, GetSignTaskDetailReq $req)
+    {
+        return $this->client->request($accessToken, json_encode($req), OpenApiUrlConstants::SIGN_TASK_GET_DETAIL);
     }
 
     # 查询参与方身份信息
