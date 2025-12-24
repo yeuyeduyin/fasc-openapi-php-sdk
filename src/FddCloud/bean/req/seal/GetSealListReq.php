@@ -3,7 +3,7 @@ namespace FddCloud\bean\req\seal;
 class GetSealListReq
 {
     public $openCorpId;
-
+    public $entityId;
     public $grantFreeSign;
 
     public $listFilter;
@@ -22,6 +22,22 @@ class GetSealListReq
     public function setOpenCorpId($openCorpId)
     {
         $this->openCorpId = $openCorpId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEntityId()
+    {
+        return $this->entityId;
+    }
+
+    /**
+     * @param mixed $entityId
+     */
+    public function setEntityId($entityId)
+    {
+        $this->entityId = $entityId;
     }
 
     /**

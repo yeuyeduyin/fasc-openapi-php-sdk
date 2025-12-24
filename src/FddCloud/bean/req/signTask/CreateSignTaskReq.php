@@ -6,6 +6,7 @@ namespace FddCloud\bean\req\signTask;
 class CreateSignTaskReq extends CreateSignTaskBaseReq
 {
     public $signInOrder;
+    public $useFda;
     public $fileFormat;
     public $isAllowInsertFile;
     public $docs;
@@ -25,6 +26,22 @@ class CreateSignTaskReq extends CreateSignTaskBaseReq
     public function setSignInOrder($signInOrder)
     {
         $this->signInOrder = $signInOrder;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUseFda()
+    {
+        return $this->useFda;
+    }
+
+    /**
+     * @param mixed $useFda
+     */
+    public function setUseFda($useFda)
+    {
+        $this->useFda = $useFda;
     }
 
     /**

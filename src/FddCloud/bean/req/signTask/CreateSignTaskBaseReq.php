@@ -23,6 +23,8 @@ class CreateSignTaskBaseReq
     public $encryptionType;
     public $businessId;
     public $transReferenceId;
+    public $callbackUrl;
+    public $offerCopies;
     public $actors;
     public $watermarks;
 
@@ -315,6 +317,37 @@ class CreateSignTaskBaseReq
         $this->transReferenceId = $transReferenceId;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getCallbackUrl()
+    {
+        return $this->callbackUrl;
+    }
+
+    /**
+     * @param mixed $callbackUrl
+     */
+    public function setCallbackUrl($callbackUrl)
+    {
+        $this->callbackUrl = $callbackUrl;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOfferCopies()
+    {
+        return $this->offerCopies;
+    }
+
+    /**
+     * @param mixed $offerCopies
+     */
+    public function setOfferCopies($offerCopies)
+    {
+        $this->offerCopies = $offerCopies;
+    }
 
     /**
      * @return mixed
