@@ -3,7 +3,7 @@
  * 测试文件
  */
 
-//require './vendor/autoload.php';
+require './autoload.php';
 
 use FddCloud\bean\req\corp\AppGetOpenIdListReq;
 use FddCloud\client\Client;

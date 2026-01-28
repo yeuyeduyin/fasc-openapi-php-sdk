@@ -329,6 +329,7 @@ class OpenApiUrlConstants
     const SIGN_TASK_ACTOR_GET_AUDIO_VIDEO_DOWNLOAD_URL = '/sign-task/actor/get-audio-video-download-url';
     const SIGN_TASK_APPLY_REPORT = '/sign-task/apply-report';
     const SIGN_TASK_DOWNLOAD_REPORT = '/sign-task/download-report';
+    const SIGN_TASK_QUERY_UNIFIED_EVIDENCE_NUMBER = '/sign-task/query-unified-evidence-number';
     const SIGN_TASK_EVIDENCE_REPORT_GET_DOWNLOAD_URL = '/sign-task/evidence-report/get-download-url';
 
 

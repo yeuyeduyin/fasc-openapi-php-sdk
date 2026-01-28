@@ -5,6 +5,7 @@ class SignConfigInfo
 {
     public $multiFactor;
     public $orderNo;
+    public $ageRequirement;
     public $freeDragSealId;
     public $signAllDoc;
 
@@ -37,6 +38,22 @@ class SignConfigInfo
     public $actorAttachInfos;
 
     public $scanSign;
+
+    /**
+     * @return mixed
+     */
+    public function getAgeRequirement()
+    {
+        return $this->ageRequirement;
+    }
+
+    /**
+     * @param mixed $ageRequirement
+     */
+    public function setAgeRequirement($ageRequirement)
+    {
+        $this->ageRequirement = $ageRequirement;
+    }
 
     /**
      * @return mixed

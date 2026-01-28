@@ -40,6 +40,7 @@ class Actor
     public $notifyType;
 
     public $notifyAddress;
+    public $sendInSiteMessage;
 
     /**
      * @deprecated 过时字段
@@ -348,6 +349,22 @@ class Actor
     public function setAccountEditable($accountEditable)
     {
         $this->accountEditable = $accountEditable;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSendInSiteMessage()
+    {
+        return $this->sendInSiteMessage;
+    }
+
+    /**
+     * @param mixed $sendInSiteMessage
+     */
+    public function setSendInSiteMessage($sendInSiteMessage)
+    {
+        $this->sendInSiteMessage = $sendInSiteMessage;
     }
 
 

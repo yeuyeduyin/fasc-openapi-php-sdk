@@ -1,6 +1,6 @@
 {
     "name": "fadada/fasc-openapi-php-sdk",
-    "version": "5.7.8.1218",
+    "version": "5.8.2.0128",
     "description": "Fadada Agreement & Signature Cloud API PHP-SDK",
     "type": "library",
     "keywords": ["FASC","fadada","php","sdk","fdd"],
